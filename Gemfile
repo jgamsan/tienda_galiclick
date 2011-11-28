@@ -37,4 +37,5 @@ end
 gem 'spree', '0.70.2'
 gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+gem 'capistrano-unicorn'
 
