@@ -1,6 +1,6 @@
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
-set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
+require "rvm/capistrano"
+set :rvm_ruby_string, 'ruby-1.9.2-p290'
 set :rvm_type, :user
 require "bundler/capistrano"
 set :application, "tienda_galiclick"
