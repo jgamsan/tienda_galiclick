@@ -32,7 +32,7 @@ namespace :deploy do
   #end
 end
 after 'deploy:update_code' do
-  run "cd /aplicacion_web/public_html/#{application}; RAILS_ENV=production rake assets:precompile"
+  run "cd /aplicacion_web/public_html/#{application}/current; RAILS_ENV=production rake assets:precompile"
 end
 after "deploy", "deploy:cleanup"
 require 'capistrano-unicorn'
