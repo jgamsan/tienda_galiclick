@@ -38,6 +38,6 @@ production:
   database: tienda_galiclick_production
   pool: 5
   username: root
-  password: uha9559
+  password: Local2007
   socket: /var/run/mysqld/mysqld.sock
 
