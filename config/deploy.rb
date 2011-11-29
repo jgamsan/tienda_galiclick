@@ -23,16 +23,17 @@ role :db,  domain, :primary => true
 set :rails_env, "production"
 
 namespace :deploy do
-  #task :start do
-  #  run "touch #{File.join(current_path,'tmp','restart.txt')}"
-  #end
-  #task :stop do ; end
-  #task :restart, :roles => :app, :except => { :no_release => true } do
-  #  run "touch #{File.join(current_path,'tmp','restart.txt')}"
-  #end
+  task :start do
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
 end
 after 'deploy:update_code' do
   run "cd /aplicacion_web/public_html/#{application}/current; RAILS_ENV=production rake assets:precompile"
 end
 after "deploy", "deploy:cleanup"
-require 'capistrano-unicorn'
+#require 'capistrano-unicorn'
+
