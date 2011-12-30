@@ -37,7 +37,6 @@ group :test do
   gem 'turn', '0.8.2', :require => false
 end
 gem 'spree', '0.70.3'
-gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
+gem 'theme_for_spree', :git => 'git://github.com/jgamsan/theme_for_spree.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
-gem 'capistrano-unicorn'
 
