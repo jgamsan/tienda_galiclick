@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/theme_for_spree.git
-  revision: f7f21c4525696dc10936a7bc18aa9ad441e15dbc
+  revision: 338f790e9fbdb693886c25eaf00d51ebe55fae3d
   specs:
     theme_for_spree (0.1.0)
 
