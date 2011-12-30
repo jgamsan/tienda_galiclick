@@ -7,7 +7,7 @@ set :application, "tienda_galiclick"
 set :domain, "tienda_galiclick.galiclick.com"
 set :user, "galiclick"
 set :port, 58378
-set :repository,  "git@gitorious.org:galiclick/tienda_galiclick.git"
+set :repository,  "git@github.com:jgamsan/tienda_galiclick.git"
 
 
 set :scm, :git
