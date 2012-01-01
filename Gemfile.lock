@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/jgamsan/theme_for_spree.git
-  revision: 1461c2e3ebdfb7ef046f86962d0ab388a28ec5ea
+  revision: 17a02872fe2e7494ce56e4cd0514dc312d47a98f
   specs:
-    theme_for_spree (0.2.2)
+    theme_for_spree (0.2.3)
 
 GIT
   remote: git://github.com/spree/spree_i18n.git
@@ -233,7 +233,7 @@ DEPENDENCIES
   sass-rails
   spree (= 0.70.3)
   spree_i18n!
-  theme_for_spree (= 0.2.2)!
+  theme_for_spree (= 0.2.3)!
   therubyracer
   turn (= 0.8.2)
   uglifier (>= 1.0.3)

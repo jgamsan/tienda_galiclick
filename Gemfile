@@ -37,6 +37,6 @@ group :test do
   gem 'turn', '0.8.2', :require => false
 end
 gem 'spree', '0.70.3'
-gem 'theme_for_spree', '0.2.2', :git => 'git://github.com/jgamsan/theme_for_spree.git'
+gem 'theme_for_spree', '0.2.3', :git => 'git://github.com/jgamsan/theme_for_spree.git'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
