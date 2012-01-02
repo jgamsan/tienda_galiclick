@@ -31,8 +31,18 @@ namespace :deploy do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+namespace :customs do
+  task :symlink, :roles => :app do
+    run <<-CMD
+      rm -rf #{release_path}/public/spree/products
+      ln -nfs #{shared_path}/system/products #{release_path}/public/spree
+    CMD
+  end
+end
+
 after 'deploy:update_code' do
   run "cd /aplicacion_web/public_html/#{application}/current; RAILS_ENV=production rake assets:precompile"
 end
+after "deploy:symlink","customs:symlink"
 after "deploy", "deploy:cleanup"
 
