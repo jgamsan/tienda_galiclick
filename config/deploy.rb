@@ -43,6 +43,6 @@ end
 after 'deploy:update_code' do
   run "cd /aplicacion_web/public_html/#{application}/current; RAILS_ENV=production rake assets:precompile"
 end
-after "deploy:symlink","customs:symlink"
-after "deploy", "deploy:cleanup"
+
+after "deploy", "customs:symlink", "deploy:cleanup"
 
